@@ -1,0 +1,34 @@
+site_name: Neural Network Notes
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+  palette:
+    scheme: slate
+
+nav:
+  - Home: index.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - toc:
+      toc_depth: 3
+
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
